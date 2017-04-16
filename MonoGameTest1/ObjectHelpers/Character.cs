@@ -16,6 +16,7 @@ namespace MonoGameTest1
 		public int armor;
 		public int attackBonus;
 		public int damage;
+		public int initiative;
 
 		public Random roll;
 
@@ -25,6 +26,7 @@ namespace MonoGameTest1
 			this.armor = armor;
 			this.attackBonus = attackBonus;
 			this.damage = damage;
+			this.initiative = 0;
 		}
 
 		public void move(int direction)
