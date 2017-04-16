@@ -53,6 +53,7 @@
     <Compile Include="MapObjects\Snake.cs" />
     <Compile Include="GameStateMachine.cs" />
     <Compile Include="CombatTurnStateMachine.cs" />
+    <Compile Include="MapObjects\Weasel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />
@@ -68,6 +69,7 @@
     <None Include="Content\pixel-tile-deep.png" />
     <None Include="Content\halberd-badger-nobg.png" />
     <None Include="Content\bow-snake-nobg.png" />
+    <None Include="Content\caltrop-weasel-nobg.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />

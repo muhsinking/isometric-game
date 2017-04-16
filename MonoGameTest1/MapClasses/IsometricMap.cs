@@ -24,7 +24,7 @@ namespace MonoGameTest1
 
 		char lastKey;
 
-		Badger badger;
+		Weasel badger;
 
 		List<MapObject> mapObjectList;
 
@@ -54,7 +54,7 @@ namespace MonoGameTest1
 
 			int tileWidth = (int) (grass.texture.Width * this.scale);
 			int tileHeight = (int) (grass.texture.Height * this.scale);
-			badger = new Badger(content, 3, 3, 0, scale);
+			badger = new Weasel(content, 3, 3, 0, scale);
 			mapObjectList.Add(badger);
 
 			for (int x = 0; x < xLength; x++)
