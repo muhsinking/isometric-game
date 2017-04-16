@@ -1,0 +1,56 @@
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/obj/x86/Debug/MonoGameTest1.Icon.ico
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/x64/libopenal.so.1
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/x64/soft_oal.dll
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/x64/libSDL2-2.0.so.0
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/x64/SDL2.dll
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/x86/libopenal.so.1
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/x86/soft_oal.dll
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/x86/libSDL2-2.0.so.0
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/x86/SDL2.dll
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/MonoGame.Framework.dll.config
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/libopenal.1.dylib
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/libSDL2-2.0.0.dylib
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/pixel-tile-small-better.xnb
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/pixel-tile-small.xnb
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/MonoGameTest1.exe.mdb
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/MonoGameTest1.exe
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/obj/x86/Debug/MonoGameTest1.exe
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/obj/x86/Debug/MonoGameTest1.exe.mdb
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/MonoGame.Framework.dll
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/crossbow-turtle.xnb
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/pixel-tile-better.xnb
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/crossbow-turtle-gang.xnb
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/pixel-tile-high-deep.xnb
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/tile-grass.xnb
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/tile-grass-no-detail.xnb
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/crossbow-turtle-large.xnb
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/obj/x86/Debug/MonoGameTest1.Icon.ico
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/x64/libopenal.so.1
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/x64/soft_oal.dll
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/x64/libSDL2-2.0.so.0
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/x64/SDL2.dll
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/x86/libopenal.so.1
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/x86/soft_oal.dll
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/x86/libSDL2-2.0.so.0
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/x86/SDL2.dll
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/MonoGame.Framework.dll.config
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/libopenal.1.dylib
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/libSDL2-2.0.0.dylib
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/Content/crossbow-turtle-gang.xnb
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/Content/crossbow-turtle-large.xnb
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/Content/crossbow-turtle.xnb
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/Content/pixel-tile-better.xnb
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/Content/pixel-tile-high-deep.xnb
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/Content/pixel-tile-small-better.xnb
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/Content/tile-grass-no-detail.xnb
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/Content/tile-grass.xnb
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/MonoGameTest1.exe.mdb
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/MonoGameTest1.exe
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/obj/x86/Debug/MonoGameTest1.exe
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/obj/x86/Debug/MonoGameTest1.exe.mdb
+/Users/muhsinking/Google Drive/MonoGameTest1/MonoGameTest1/bin/Debug/MonoGame.Framework.dll
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/pixel-tile-deep.xnb
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/halberd-badger-nobg.xnb
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/bow-snake-nobg.xnb

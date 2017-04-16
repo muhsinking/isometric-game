@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{D73B3BF0-7096-4A8A-91D8-412EE47A07C3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MonoGameTest1/SpriteClass.cs">
+    <Files>
+      <File FileName="MonoGameTest1/Game1.cs" Line="66" Column="22" />
+      <File FileName="MonoGameTest1/SpriteClass.cs" Line="2" Column="1" />
+      <File FileName="MonoGameTest1/IsometricTile.cs" Line="2" Column="1" />
+      <File FileName="MonoGameTest1/IsometricMap.cs" Line="5" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MonoGameTest1 PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

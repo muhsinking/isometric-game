@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/Content/pixel-tile-small-better.png</File>
+    <File>/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/Content/crossbow-turtle.png</File>
+    <File>/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/Content/pixel-tile-better.png</File>
+    <File>/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/Content/crossbow-turtle-gang.png</File>
+    <File>/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/Content/pixel-tile-high-deep.png</File>
+    <File>/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/Content/tile-grass.png</File>
+    <File>/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/Content/tile-grass-no-detail.png</File>
+    <File>/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/Content/crossbow-turtle-large.png</File>
+    <File>/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/Content/pixel-tile-deep.png</File>
+    <File>/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/Content/halberd-badger-nobg.png</File>
+    <File>/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/Content/bow-snake-nobg.png</File>
+  </SourceFiles>
+</SourceFileCollection>
