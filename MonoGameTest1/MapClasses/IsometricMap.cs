@@ -26,14 +26,9 @@ namespace MonoGameTest1
 
 		Badger badger;
 
-		TileBrush tileBrush;
-		ActorBrush actorBrush;
-
 		List<MapObject> mapObjectList;
 
 		SpriteClass grass;
-		SpriteClass turtleGang;
-		Vector2 windowDimensions;
 
 		public IsometricMap(ContentManager content, GraphicsDevice graphicsDevice, Vector2 windowDimensions, int xLength, int yLength, int zLength, float scale)
 		{
@@ -41,12 +36,8 @@ namespace MonoGameTest1
 			this.yLength = yLength;
 			this.zLength = zLength;
 			this.scale = scale;
-			this.windowDimensions = windowDimensions;
 
 			lastKey = '_';
-
-			tileBrush = new TileBrush(content);
-			actorBrush = new ActorBrush(content, scale);
 
 			tileMap = new IsometricTile[xLength, yLength, zLength];
 			tileMapIso = new IsometricTile[xLength*2-1,yLength*2-1, zLength];
@@ -127,20 +118,6 @@ namespace MonoGameTest1
 			return cart;
 		}
 
-		public void Update(float elapsedTime)
-		{
-			for (int i = 0; i < xLength; i++)
-			{
-				for (int j = 0; j < yLength; j++)
-				{
-					for (int k = 0; k < zLength; k++)
-					{
-						
-					}
-				}
-			}
-		}
-
 		public void DrawTiles(SpriteBatch spriteBatch)
 		{
 			for (int y = 0; y < tileMapIso.GetLength(1); y++)
@@ -188,6 +165,14 @@ namespace MonoGameTest1
 			DrawObjects(spriteBatch);
 		}
 
+		public Boolean Validtile(int X, int Y, int Z)
+		{
+			if (X < 0 || Y < 0 || X >= xLength || Y >= yLength) return false;
+			if (tileMap[X,Y,Z] == null) return false;
+			if (tileMap[X, Y, Z].TextureID == 0) return false;
+			return true;
+		}
+
 		public void KeyBoardHandler()
 		{
 			KeyboardState state = Keyboard.GetState();
@@ -197,23 +182,28 @@ namespace MonoGameTest1
 				if (lastKey != 'w')
 				{
 					lastKey = 'w';
-					badger.move(1);
+					if(Validtile(badger.TileX,badger.TileY-1,badger.TileZ))
+						badger.move(1);
 				}
 			}
 			else if (state.IsKeyDown(Keys.A))
 			{
 				if (lastKey != 'a')
 				{
+					
 					lastKey = 'a';
-					badger.move(0);
+					if (Validtile(badger.TileX - 1, badger.TileY, badger.TileZ))
+						badger.move(0);
 				}
 			}
 			else if (state.IsKeyDown(Keys.S))
 			{
 				if (lastKey != 's')
 				{
+					
 					lastKey = 's';
-					badger.move(3);
+					if (Validtile(badger.TileX, badger.TileY + 1, badger.TileZ))
+						badger.move(3);
 				}
 			}
 			else if (state.IsKeyDown(Keys.D))
@@ -221,7 +211,8 @@ namespace MonoGameTest1
 				if (lastKey != 'd')
 				{
 					lastKey = 'd';
-					badger.move(2);
+					if (Validtile(badger.TileX + 1, badger.TileY, badger.TileZ))
+						badger.move(2);
 				}
 			}
 			else {
