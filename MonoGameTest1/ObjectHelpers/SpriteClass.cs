@@ -76,7 +76,7 @@ namespace MonoGameTest1
 		public void Update(float elapsedTime)
 		{
 			X += dX * elapsedTime;
-			X += dY * elapsedTime;
+			Y += dY * elapsedTime;
 			angle += dA * elapsedTime;
 		}
 
