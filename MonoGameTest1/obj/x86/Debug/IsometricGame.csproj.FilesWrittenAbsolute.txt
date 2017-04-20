@@ -55,3 +55,4 @@
 /Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/halberd-badger-nobg.xnb
 /Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/bow-snake-nobg.xnb
 /Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/caltrop-weasel-nobg.xnb
+/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/bin/Debug/Content/pixel-tile-square.xnb

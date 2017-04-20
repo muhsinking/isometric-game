@@ -54,6 +54,8 @@
     <Compile Include="GameStateMachine.cs" />
     <Compile Include="CombatTurnStateMachine.cs" />
     <Compile Include="MapObjects\Weasel.cs" />
+    <Compile Include="MapClasses\MouseHandler.cs" />
+    <Compile Include="MapClasses\Camera.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />
@@ -70,6 +72,7 @@
     <None Include="Content\halberd-badger-nobg.png" />
     <None Include="Content\bow-snake-nobg.png" />
     <None Include="Content\caltrop-weasel-nobg.png" />
+    <None Include="Content\pixel-tile-square.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />

@@ -26,6 +26,7 @@ namespace MonoGameTest1
 			graphics.PreferredBackBufferWidth = windowWidth;  // set this value to the desired width of your window
 			graphics.PreferredBackBufferHeight = windowHeight;   // set this value to the desired height of your window
 			graphics.ApplyChanges();
+			IsMouseVisible = true;
 		}
 
 		protected override void Initialize()
@@ -36,18 +37,17 @@ namespace MonoGameTest1
 		protected override void LoadContent()
 		{
 			spriteBatch = new SpriteBatch(GraphicsDevice);
-			map = new IsometricMap(this.Content, GraphicsDevice, new Vector2(windowWidth,windowHeight), 8, 8, 1, 3f);
+			map = new IsometricMap(this.Content, GraphicsDevice, new Vector2(windowWidth,windowHeight), 8, 8, 1, 2f);
 			turtle = new SpriteClass(this.Content, "halberd-badger-nobg", 0, 0, 3f);
 		}
 
 		protected override void Update(GameTime gameTime)
 		{
+			float elapsedTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
+
 			MouseState mouse = Mouse.GetState();
-
-			turtle.X = mouse.X;
-			turtle.Y = mouse.Y;
-
-			map.Update(gameTime);
+			Camera.HandleInput(elapsedTime);
+			map.Update(elapsedTime);
 
 			base.Update(gameTime);
 		}

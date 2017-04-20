@@ -22,9 +22,11 @@ namespace MonoGameTest1
 		IsometricTile[,,] tileMapIso;
 		float yCharacterOffset; //HACK
 
+		MouseHandler mouseHandler;
+
 		char lastKey;
 
-		Weasel badger;
+		Badger badger;
 
 		List<MapObject> mapObjectList;
 
@@ -37,6 +39,8 @@ namespace MonoGameTest1
 			this.zLength = zLength;
 			this.scale = scale;
 
+			mouseHandler = new MouseHandler();
+
 			lastKey = '_';
 
 			tileMap = new IsometricTile[xLength, yLength, zLength];
@@ -46,15 +50,18 @@ namespace MonoGameTest1
 			yCharacterOffset = 32 * scale;
 
 			// load grass texture
-			grass = new SpriteClass(content, "tile-grass-no-detail", 0, 0, this.scale);
+			//grass = new SpriteClass(content, "tile-grass-no-detail", 0, 0, this.scale);
 			//grass = new SpriteClass(content, "pixel-tile-deep", 0, 0, this.scale);
+			grass = new SpriteClass(content, "pixel-tile-square", 0, 0, this.scale * .9f);
 
-			// load turtle gang texture
-			// turtleGang = new Character(content, "crossbow-turtle", 0, 0, this.scale);
+			int tileWidth = (int)(grass.texture.Width * this.scale);
+			int tileHeight = (int)(grass.texture.Height * this.scale);
 
-			int tileWidth = (int) (grass.texture.Width * this.scale);
-			int tileHeight = (int) (grass.texture.Height * this.scale);
-			badger = new Weasel(content, 3, 3, 0, scale);
+			Vector2 boardDimensions = new Vector2(xLength*tileWidth, yLength*tileHeight);
+			Vector2 startingPoint = new Vector2(windowDimensions.X/2 - boardDimensions.X/2 - tileWidth/2, windowDimensions.Y/2 - boardDimensions.Y/2 - tileHeight/2);
+
+
+			badger = new Badger(content, 3, 3, 0, scale);
 			mapObjectList.Add(badger);
 
 			for (int x = 0; x < xLength; x++)
@@ -67,23 +74,24 @@ namespace MonoGameTest1
 						if (z == 0 || x == 3 || y == 3)
 						{
 							newTile = new IsometricTile(1,0,0);
-							if (x == 3 && y == 3)
-							{
-								newTile.ActorList.Add(3);
-							}
 						}
+
 						else 
 						{
 							newTile = new IsometricTile(0,0,0);
 						}
 
 
+						newTile.X = startingPoint.X + x * tileWidth;
+						newTile.Y = startingPoint.Y + y * tileHeight;
+
 						Vector2 iso = CartToIso(new Vector2(x, y));
 
-						newTile.X = windowDimensions.X/2 + tileWidth * iso.X / 2;
+
+						//newTile.X = windowDimensions.X/2 + tileWidth * iso.X / 2;
 
 						//TODO fix texture to get rid of 2*scale
-						newTile.Y = 50 + (tileHeight * 4 / 5 - (4*scale)) * iso.Y - (z*tileHeight*1/5);
+						//newTile.Y = 50 + (tileHeight * 4 / 5 - (4*scale)) * iso.Y - (z*tileHeight*1/5);
 						//newTile.Y = 50 + (tileHeight * 2 / 3 - (2 * scale)) * iso.Y - (z * tileHeight * 1 / 3);
 
 
@@ -99,6 +107,12 @@ namespace MonoGameTest1
 			}
 
 		}
+
+		
+		//public int[] getTileHitbox(IsometricTile tile)
+		//{
+			
+		//}
 
 		// convert cartesian coordinates to isometric coordinates
 		public Vector2 CartToIso(Vector2 cart)
@@ -120,34 +134,93 @@ namespace MonoGameTest1
 
 		public void DrawTiles(SpriteBatch spriteBatch)
 		{
-			for (int y = 0; y < tileMapIso.GetLength(1); y++)
+			//for (int y = 0; y < tileMapIso.GetLength(1); y++)
+			//{
+			//	for (int x = 0; x < tileMapIso.GetLength(0); x++)
+			//	{
+			//		for (int z = 0; z < tileMapIso.GetLength(2); z++)
+			//		{
+			//			if (tileMapIso[x, y, z] != null)
+			//			{
+			//				if (tileMapIso[x, y, z].TextureID == 1)
+			//				{
+			//					// tile brush and actor brush
+			//					// each takes tile/actor IDs, then draws the appropriate thingy in the given space
+			//					// add an list of actors to each tile
+			//					// actor brush takes that list, places them on the tile one after another, using the x,y,z of the tile
+			//					grass.X = tileMapIso[x, y, z].X;
+			//					grass.Y = tileMapIso[x, y, z].Y;
+
+			//					if (tileMapIso[x, y, z].highlighted)
+			//					{
+			//						grass.DrawHighlighted(spriteBatch);
+			//					}
+
+			//					else
+			//					{
+			//						grass.Draw(spriteBatch);
+			//					}
+			//					//actorBrush.Draw(spriteBatch, tileMapIso[x, y, z]);
+			//				}
+			//			}
+			//		}
+			//	}
+			//}
+
+			for (int y = 0; y < yLength; y++)
 			{
-				for (int x = 0; x < tileMapIso.GetLength(0); x++)
+				for (int x = 0; x < xLength; x++)
 				{
-					for (int z = 0; z < tileMapIso.GetLength(2); z++)
+					IsometricTile curr = tileMap[x, y, 0];
+					if(curr.TextureID == 1)
 					{
-						if (tileMapIso[x, y, z] != null)
+						grass.X = curr.X;
+						grass.Y = curr.Y;
+						grass.Draw(spriteBatch);
+					}
+
+				}	
+			}
+		}
+
+		public void Update(float elapsedTime)
+		{
+			KeyBoardHandler();
+			mouseHandler.Update();
+			UpdateTiles();
+		}
+
+		public void UpdateTiles()
+		{
+			IsometricTile curr;
+			// update tiles in cartesian order
+			for (int x = 0; x < xLength; x++)
+			{
+				for (int y = 0; y < yLength; y++)
+				{
+					for (int z = 0; z < zLength; z++)
+					{
+						curr = tileMap[x, y, z];
+						if (getTilePointCollision(curr, new Vector2(mouseHandler.mouse.X, mouseHandler.mouse.Y)))
 						{
-							if (tileMapIso[x, y, z].TextureID == 1)
-							{
-								// tile brush and actor brush
-								// each takes tile/actor IDs, then draws the appropriate thingy in the given space
-								// add an list of actors to each tile
-								// actor brush takes that list, places them on the tile one after another, using the x,y,z of the tile
-								grass.X = tileMapIso[x, y, z].X;
-								grass.Y = tileMapIso[x, y, z].Y;
-								grass.Draw(spriteBatch);
-								//actorBrush.Draw(spriteBatch, tileMapIso[x, y, z]);
-							}
+							curr.highlighted = true;
 						}
+						else curr.highlighted = false;
 					}
 				}
 			}
 		}
 
-		public void Update(GameTime gameTime)
+		public Boolean getTilePointCollision(IsometricTile tile, Vector2 point)
 		{
-			KeyBoardHandler();
+			float halfTextureWidth = grass.texture.Width/2;
+			float halfTextureHeight = grass.texture.Height / 2;
+			if (point.X <= tile.X + halfTextureWidth && point.X >= tile.X - halfTextureWidth
+			    && point.Y <= tile.Y + halfTextureHeight && point.Y >= tile.Y - halfTextureHeight)
+			{
+				return true;
+			}
+			return false;
 		}
 
 		public void DrawObjects(SpriteBatch spriteBatch)

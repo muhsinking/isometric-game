@@ -19,14 +19,19 @@ namespace MonoGameTest1
 		public float Y { get; set; }
 		public int TextureID { get; set; }
 		public List<int> ActorList { get; set; }
+		public Boolean highlighted { get; set; }
+
 
 		public IsometricTile(int TextureID, float X, float Y)
 		{
 			this.TextureID = TextureID;
 			this.X = X;
 			this.Y = Y;
+			highlighted = false;
 
 			ActorList = new List<int>();
 		}
+
+
 	}
 }

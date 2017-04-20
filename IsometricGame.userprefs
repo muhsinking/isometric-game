@@ -1,17 +1,12 @@
 ﻿<Properties StartupConfiguration="{D73B3BF0-7096-4A8A-91D8-412EE47A07C3}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MonoGameTest1/MapObjects/Weasel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MonoGameTest1/MapClasses/IsometricMap.cs">
     <Files>
-      <File FileName="MonoGameTest1/Game1.cs" Line="50" Column="22" />
-      <File FileName="MonoGameTest1/MapClasses/IsometricMap.cs" Line="129" Column="39" />
-      <File FileName="MonoGameTest1/MapObjects/Snake.cs" Line="18" Column="4" />
-      <File FileName="MonoGameTest1/MapClasses/IsometricTile.cs" Line="4" Column="32" />
-      <File FileName="MonoGameTest1/ObjectHelpers/SpriteClass.cs" Line="85" Column="47" />
-      <File FileName="MonoGameTest1/MapClasses/ActorBrush.cs" Line="1" Column="1" />
-      <File FileName="MonoGameTest1/GameStateMachine.cs" Line="2" Column="30" />
-      <File FileName="MonoGameTest1/CombatTurnStateMachine.cs" Line="15" Column="4" />
-      <File FileName="MonoGameTest1/ObjectHelpers/Character.cs" Line="29" Column="24" />
-      <File FileName="MonoGameTest1/MapObjects/Weasel.cs" Line="8" Column="21" />
-      <File FileName="MonoGameTest1/MapObjects/Badger.cs" Line="22" Column="1" />
+      <File FileName="MonoGameTest1/Game1.cs" Line="57" Column="43" />
+      <File FileName="MonoGameTest1/MapClasses/IsometricMap.cs" Line="84" Column="13" />
+      <File FileName="MonoGameTest1/MapClasses/MouseHandler.cs" Line="20" Column="4" />
+      <File FileName="MonoGameTest1/MapClasses/IsometricTile.cs" Line="21" Column="29" />
+      <File FileName="MonoGameTest1/ObjectHelpers/SpriteClass.cs" Line="59" Column="19" />
+      <File FileName="MonoGameTest1/MapClasses/Camera.cs" Line="10" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
@@ -20,4 +15,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.IsometricGame PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
 </Properties>

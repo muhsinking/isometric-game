@@ -82,8 +82,15 @@ namespace MonoGameTest1
 
 		public void Draw(SpriteBatch spriteBatch)
 		{
-			Vector2 spritePosition = new Vector2(X, Y);
+			Vector2 spritePosition = new Vector2(X+Camera.X, Y+Camera.Y);
+			//Vector2 spritePosition = new Vector2(X, Y);
 			spriteBatch.Draw(texture, spritePosition, null, Color.White, angle, new Vector2(texture.Width / 2, texture.Height / 2), new Vector2(scale, scale), SpriteEffects.None, 0f);
+		}
+
+		public void DrawHighlighted(SpriteBatch spriteBatch)
+		{
+			Vector2 spritePosition = new Vector2(X + Camera.X, Y + Camera.Y);
+			spriteBatch.Draw(texture, spritePosition, null, Color.DeepSkyBlue, angle, new Vector2(texture.Width / 2, texture.Height / 2), new Vector2(scale, scale), SpriteEffects.None, 0f);
 		}
 	}
 }
