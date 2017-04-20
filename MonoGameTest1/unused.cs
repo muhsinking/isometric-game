@@ -224,6 +224,53 @@ namespace MonoGameTest1
 			//	numInRow--;
 			//}
 
+
+			//for (int y = 0; y < tileMapIso.GetLength(1); y++)
+			//{
+			//	for (int x = 0; x < tileMapIso.GetLength(0); x++)
+			//	{
+			//		for (int z = 0; z < tileMapIso.GetLength(2); z++)
+			//		{
+			//			if (tileMapIso[x, y, z] != null)
+			//			{
+			//				if (tileMapIso[x, y, z].TextureID == 1)
+			//				{
+			//					// tile brush and actor brush
+			//					// each takes tile/actor IDs, then draws the appropriate thingy in the given space
+			//					// add an list of actors to each tile
+			//					// actor brush takes that list, places them on the tile one after another, using the x,y,z of the tile
+			//					grass.X = tileMapIso[x, y, z].X;
+			//					grass.Y = tileMapIso[x, y, z].Y;
+
+			//					if (tileMapIso[x, y, z].highlighted)
+			//					{
+			//						grass.DrawHighlighted(spriteBatch);
+			//					}
+
+			//					else
+			//					{
+			//						grass.Draw(spriteBatch);
+			//					}
+			//					//actorBrush.Draw(spriteBatch, tileMapIso[x, y, z]);
+			//				}
+			//			}
+			//		}
+			//			//}
+
+//Vector2 iso = CartToIso(new Vector2(x, y));
+
+
+////newTile.X = windowDimensions.X/2 + tileWidth * iso.X / 2;
+
+////TODO fix texture to get rid of 2*scale
+////newTile.Y = 50 + (tileHeight * 4 / 5 - (4*scale)) * iso.Y - (z*tileHeight*1/5);
+////newTile.Y = 50 + (tileHeight * 2 / 3 - (2 * scale)) * iso.Y - (z * tileHeight * 1 / 3);
+
+
+////newTile.Y = 80 + (tileHeight * 3 / 4 - (2 * this.scale)) * iso.Y - (z * tileHeight * 1 / 4 + (2 * this.scale));
+//iso.X += tileMapIso.GetLength(0)/2;
+//						iso.Y *= 2;
+
 		}
 	}
 }

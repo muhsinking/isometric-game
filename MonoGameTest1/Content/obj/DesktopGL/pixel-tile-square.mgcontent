@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/Content/pixel-tile-square.png</SourceFile>
-  <SourceTime>2017-04-19T20:41:54-07:00</SourceTime>
+  <SourceTime>2017-04-19T21:15:01-07:00</SourceTime>
   <DestFile>/Users/muhsinking/Projects/MonoGameTest1/MonoGameTest1/Content/bin/DesktopGL/pixel-tile-square.xnb</DestFile>
-  <DestTime>2017-04-19T21:05:50-07:00</DestTime>
+  <DestTime>2017-04-19T21:15:22-07:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T07:06:24-08:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

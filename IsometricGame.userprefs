@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{D73B3BF0-7096-4A8A-91D8-412EE47A07C3}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MonoGameTest1/MapClasses/IsometricMap.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MonoGameTest1/unused.cs">
     <Files>
-      <File FileName="MonoGameTest1/Game1.cs" Line="57" Column="43" />
-      <File FileName="MonoGameTest1/MapClasses/IsometricMap.cs" Line="84" Column="13" />
-      <File FileName="MonoGameTest1/MapClasses/MouseHandler.cs" Line="20" Column="4" />
-      <File FileName="MonoGameTest1/MapClasses/IsometricTile.cs" Line="21" Column="29" />
-      <File FileName="MonoGameTest1/ObjectHelpers/SpriteClass.cs" Line="59" Column="19" />
-      <File FileName="MonoGameTest1/MapClasses/Camera.cs" Line="10" Column="32" />
+      <File FileName="MonoGameTest1/Game1.cs" Line="1" Column="1" />
+      <File FileName="MonoGameTest1/MapClasses/IsometricMap.cs" Line="137" Column="4" />
+      <File FileName="MonoGameTest1/MapClasses/MouseHandler.cs" Line="1" Column="1" />
+      <File FileName="MonoGameTest1/MapClasses/IsometricTile.cs" Line="1" Column="1" />
+      <File FileName="MonoGameTest1/ObjectHelpers/SpriteClass.cs" Line="1" Column="1" />
+      <File FileName="MonoGameTest1/MapClasses/Camera.cs" Line="1" Column="1" />
+      <File FileName="MonoGameTest1/unused.cs" Line="230" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
